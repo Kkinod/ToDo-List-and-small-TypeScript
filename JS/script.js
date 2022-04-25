@@ -1,13 +1,12 @@
-let inputText
-let ulListArea
-let alertEmptyTodo
-let showPopup
-let popupInputText
-let popupBtnSave
-let popupBtnCancel
-let popupInfo
-let btnAddTask
-let editPopup
+let inputText   // input for typing the task
+let ulListArea  // area with tasks
+let btnAddTask  // btn for adding a new task
+let editPopup   // button to edit an existing task
+let showPopup   // opening a popup to edit the task
+let popupInputText  // input to edit the task
+let popupBtnSave    // Btn to saving changes in popup
+let popupBtnCancel  // btn to closing popup without saving changes
+let popupInfo   // error when we will try to saving empty popup
 
 let ID = 0
 
@@ -38,7 +37,7 @@ const prepareDOMEvents = () => {
 
 const addTask = () => {
     if (!(inputText.value === '')) {
-		// new task
+        // new task
         const newTask = document.createElement('li')
         newTask.setAttribute('id', ID)
         newTask.innerText = `${inputText.value}`
@@ -64,8 +63,7 @@ const addTask = () => {
         deleteButton.classList.add('delete')
         deleteButton.innerHTML = '<i class="fas fa-times"></i>'
         toolsDiv.append(deleteButton)
-		//---
-
+        //---
         ID++
         inputText.value = ''
         emptyTodo()
