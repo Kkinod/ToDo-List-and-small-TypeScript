@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./JSTS",
+        "target": "ES2015",
+        "module": "ES2015"
+    }
+}

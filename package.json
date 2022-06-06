@@ -1,0 +1,12 @@
+{
+  "name": "todo-list-with-edit-main",
+  "version": "1.0.0",
+  "description": "Site: https://kkinod.github.io/ToDo-List-with-edit/",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
